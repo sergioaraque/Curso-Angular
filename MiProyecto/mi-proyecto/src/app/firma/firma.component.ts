@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-firma',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./firma.component.css']
 })
 export class FirmaComponent implements OnInit {
+
+  // Método para recibir información
+  @Input() colorNombre: string;
 
   constructor() { }
 
