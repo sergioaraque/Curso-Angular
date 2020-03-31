@@ -21,7 +21,7 @@ export class RandomComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // Función para obtener el color aleatorio, se hace la multiplicación de 256*256*256 para que nos de todos los valores y lo convertimos con el toString(16)
+  // Función para obtener el color aleatorio, se hace la multiplicación de 256*256*256 para que nos de todos los valores y lo convertimos con el toString(16) para que nos lo de en formato hexadecimal
   obtenerColorAleatorio(): string {
     return Math.floor(Math.random() * 16777215).toString(16);
   }
