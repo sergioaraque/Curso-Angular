@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { EjemplocomponenteComponent } from './ejemplocomponente/ejemplocomponente.component';
 import { RandomComponent } from './random/random.component';
 import { ColoresComponent } from './colores/colores.component';
+import { FirmaComponent } from './firma/firma.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EjemplocomponenteComponent,
     RandomComponent,
-    ColoresComponent
+    ColoresComponent,
+    FirmaComponent
   ],
   imports: [
     BrowserModule,
