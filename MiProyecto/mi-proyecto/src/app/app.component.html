@@ -317,6 +317,11 @@
 
 <div class="content" role="main">
 
+  <!--- Vamos a crear un butón para ver -->
+  <p>{{condicion}}</p>
+  <button (click)="condicion = !condicion">Ver</button> <!-- Cada vez que se haga click, el valor será el contrario -->
+  <div *ngIf="condicion">
+
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -338,6 +343,9 @@
     </svg>
 
   </div>
+
+</div>
+
   <!-- Cada instancia del componente es por defecto distinta a la anterior -->
   <app-colores></app-colores>
   <app-colores></app-colores>

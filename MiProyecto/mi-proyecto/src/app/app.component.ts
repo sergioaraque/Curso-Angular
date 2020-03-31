@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mi-proyecto';
+  condicion:boolean = false; // Creamos una condición de tipo boolean en el componente principal
+
 }
