@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EjemplocomponenteComponent } from './ejemplocomponente/ejemplocomponente.component';
 import { RandomComponent } from './random/random.component';
+import { ColoresComponent } from './colores/colores.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EjemplocomponenteComponent,
-    RandomComponent
+    RandomComponent,
+    ColoresComponent
   ],
   imports: [
     BrowserModule,
