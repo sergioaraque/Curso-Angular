@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RandomComponent implements OnInit {
 
+  numrandom: number = Math.floor(Math.random() * 10); // Obtenemos un número aleatorio del 1 al 10.
+  
   constructor() { }
 
   ngOnInit(): void {
