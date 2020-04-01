@@ -11,7 +11,9 @@ import { InicioComponent } from './inicio/inicio.component';
 // Constantes
 const rutas: Routes = [
   {path: 'listado-libros', component: LibrosComponent}, // Para verlo habrá que ir a http://localhost:4200/listado-libros
-  {path: '', component: InicioComponent, pathMatch: 'full'} // Este será el componente por defecto
+  // Estas rutas, al ser más globales las dejamos para el final
+  {path: '', component: InicioComponent, pathMatch: 'full'}, // Este será el componente por defecto
+  {path: '**', redirectTo: '/'} // Si introducimos otro que no exista anteriormente, nos devuelve a la raiz.
 ];
 
 @NgModule({
