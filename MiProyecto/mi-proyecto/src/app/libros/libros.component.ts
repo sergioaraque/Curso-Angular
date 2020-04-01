@@ -24,6 +24,8 @@ export class LibrosComponent implements OnInit {
   // Método para mostrar el autor. _libro viene desde la vista
   showAuthor(_libro) {
     alert("El autor es: " + _libro.autor);
+
+    // Se puede probar por consola con un console.log();
   }
 
 
