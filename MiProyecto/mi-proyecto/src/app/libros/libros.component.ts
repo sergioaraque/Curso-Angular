@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class LibrosComponent implements OnInit {
 
   // Array de libros
-  libros: Array<string>;
-  // También sirve libros: Array<any>
+  libros: Array<object>;
 
   constructor() { 
-    this.libros = ["El nombre del viento", "Harry Potter 1", "La celestina"];
+    this.libros = [
+      {id: '1', titulo: 'El nombre del viento', autor: 'Patrick Rothfus'},
+      {id: '2', titulo: 'Dime quién soy', autor: 'Julia Navarro'},
+      {id: '3', titulo: 'El día que se perdió la cordura', autor: 'Javier Castillo'}
+    ];
   }
 
   ngOnInit(): void {
