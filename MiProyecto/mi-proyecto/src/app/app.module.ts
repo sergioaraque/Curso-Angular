@@ -8,6 +8,7 @@ import { EjemplocomponenteComponent } from './ejemplocomponente/ejemplocomponent
 import { RandomComponent } from './random/random.component';
 import { ColoresComponent } from './colores/colores.component';
 import { FirmaComponent } from './firma/firma.component';
+import { LibrosComponent } from './libros/libros.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FirmaComponent } from './firma/firma.component';
     EjemplocomponenteComponent,
     RandomComponent,
     ColoresComponent,
-    FirmaComponent
+    FirmaComponent,
+    LibrosComponent
   ],
   imports: [
     BrowserModule,
