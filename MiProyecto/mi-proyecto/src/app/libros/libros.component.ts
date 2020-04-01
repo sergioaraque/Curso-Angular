@@ -21,4 +21,10 @@ export class LibrosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Método para mostrar el autor. _libro viene desde la vista
+  showAuthor(_libro) {
+    alert("El autor es: " + _libro.autor);
+  }
+
+
 }
