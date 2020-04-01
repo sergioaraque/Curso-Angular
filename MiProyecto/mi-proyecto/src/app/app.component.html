@@ -8,3 +8,10 @@
 
 <input type="text" [(ngModel)]="so"/>
 <button>Ver</button>
+
+
+
+<div [ngStyle]="{'background': color ? color:'red'}">Texto con el fondo rojo</div>
+<button (click)="color = 'yellow'">Amarillo</button>
+<button (click)="color = 'blue'">Azul</button>
+<button (click)="color = 'purple'">Morado</button>
