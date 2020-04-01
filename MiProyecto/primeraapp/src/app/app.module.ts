@@ -7,13 +7,14 @@ import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.componen
 import { LibrosComponent } from './libros/libros.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ErrorComponent } from './error/error.component';
 
 // Constantes
 const rutas: Routes = [
   {path: 'listado-libros', component: LibrosComponent}, // Para verlo habrá que ir a http://localhost:4200/listado-libros
   // Estas rutas, al ser más globales las dejamos para el final
   {path: '', component: InicioComponent, pathMatch: 'full'}, // Este será el componente por defecto
-  {path: '**', redirectTo: '/'} // Si introducimos otro que no exista anteriormente, nos devuelve a la raiz.
+  {path: '**', component: ErrorComponent} // Si introducimos otro que no exista anteriormente, nos devuelve a la raiz.
 ];
 
 @NgModule({
@@ -22,7 +23,8 @@ const rutas: Routes = [
     SobreNosotrosComponent,
     LibrosComponent,
     CabeceraComponent,
-    InicioComponent
+    InicioComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
