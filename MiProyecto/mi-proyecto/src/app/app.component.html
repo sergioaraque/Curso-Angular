@@ -12,6 +12,6 @@
 
 
 <div [ngStyle]="{'background': color ? color:'red'}">Texto con el fondo rojo</div>
-<button (click)="color = 'yellow'">Amarillo</button>
-<button (click)="color = 'blue'">Azul</button>
-<button (click)="color = 'purple'">Morado</button>
+<button (click)="color = 'yellow'" [ngClass]="color">Amarillo</button>
+<button (click)="color = 'blue'" [ngClass]="color">Azul</button>
+<button (click)="color = 'purple'" [ngClass]="color">Morado</button>
