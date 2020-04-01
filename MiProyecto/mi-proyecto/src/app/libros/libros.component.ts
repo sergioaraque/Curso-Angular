@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class LibrosComponent implements OnInit {
 
   // Array de libros
-  libros: Array<object>;
+  libros: Array<string>;
   // También sirve libros: Array<any>
 
-  constructor() { }
+  constructor() { 
+    this.libros = ["El nombre del viento", "Harry Potter 1", "La celestina"];
+  }
 
   ngOnInit(): void {
   }
