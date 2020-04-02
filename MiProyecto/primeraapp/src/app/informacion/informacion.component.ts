@@ -8,6 +8,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 })
 export class InformacionComponent implements OnInit {
 
+  // Variables
   libros: Array<object>;
   libroId: number;
   libroClick: any;
