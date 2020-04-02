@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LibroclickedService } from './libroclicked.service';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
@@ -10,6 +10,7 @@ import { CabeceraComponent } from './cabecera/cabecera.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ErrorComponent } from './error/error.component';
 import { InformacionComponent } from './informacion/informacion.component';
+import { LibroclickedService } from './libroclicked.service';
 
 // Constantes
 const rutas: Routes = [
@@ -33,6 +34,7 @@ const rutas: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(rutas)
   ],
   providers: [

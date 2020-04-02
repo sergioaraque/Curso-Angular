@@ -1,6 +1,8 @@
 <ul>
     <li *ngFor="let libro of libros">
         <!-- Se puede pasar un nuevo parámetro a la url con una coma -->
-      <a [routerLink]="['/informacion/', libro.id]">{{libro.titulo}}</a>
+      <a
+      (click)="agregarLibro(libro)"
+      [routerLink]="['/informacion/', libro.id]">{{libro.titulo}}</a>
     </li>
   </ul>

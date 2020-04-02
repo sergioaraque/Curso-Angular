@@ -2,3 +2,12 @@
     <li><a [routerLink]="['/listado-libros']" routerLinkActive="myClass">Listado Libros</a></li>
     <li><a [routerLink]="['/']" routerLinkActive="myClass">Inicio</a></li>
 </ul>
+
+<h3>
+    Libros vistos:
+</h3>
+<!-- Mostramos la vista si hay libros -->
+<ul *ngIf="librosVistos.verListado()">
+    <!-- Listamos los libros vistos-->
+    <li *ngFor="let libro of librosVistos.verListado()">{{libro.titulo}}</li>
+</ul>
