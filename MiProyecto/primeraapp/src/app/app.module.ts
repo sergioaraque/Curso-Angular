@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LibroclickedService } from './libroclicked.service';
 
 import { AppComponent } from './app.component';
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
@@ -34,7 +35,9 @@ const rutas: Routes = [
     BrowserModule,
     RouterModule.forRoot(rutas)
   ],
-  providers: [],
+  providers: [
+    LibroclickedService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
