@@ -5,4 +5,9 @@
       (click)="agregarLibro(libro)"
       [routerLink]="['/informacion/', libro.id]">{{libro.titulo}}</a>
     </li>
-  </ul>
+</ul>
+
+<div *ngIf="errorHttp">
+  <h3>Error: 404 No hemos podido recuperar el listado de libros.</h3>
+  <p>Contacte con soporte para solucionar el problema, info@soporte.es</p>
+</div>

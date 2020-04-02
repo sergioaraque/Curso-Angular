@@ -23,7 +23,7 @@ export class LibrosComponent implements OnInit {
   // Método para cargar la lista de los libros
   cargarLista() {
     // Nos suscribimos, osea que Angular va a estar mirando a esta página
-    this.http.get('assets/lista-libros.json').subscribe(
+    this.http.get('assets/lista-libros2.json').subscribe(
       (respuesta: Response) => {this.libros = respuesta;}, // Obtenemos la respuesta y es cuando es okey.
       (respuesta: Response) => {this.errorHttp = true;}// Esto es cuando ha dado error. Si hay un error, la variable errorHttp la ponemos a true
     )
