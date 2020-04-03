@@ -20,6 +20,7 @@ export class LibrosComponent implements OnInit {
   ngOnInit(): void {
     this.verLoader = true;
     this.cargarLista();
+    
   }
 
   // Método para cargar la lista de los libros
