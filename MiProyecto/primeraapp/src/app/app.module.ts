@@ -11,6 +11,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ErrorComponent } from './error/error.component';
 import { InformacionComponent } from './informacion/informacion.component';
 import { LibroclickedService } from './libroclicked.service';
+import { RendererdemoComponent } from './rendererdemo/rendererdemo.component';
 
 // Constantes
 const rutas: Routes = [
@@ -30,7 +31,8 @@ const rutas: Routes = [
     CabeceraComponent,
     InicioComponent,
     ErrorComponent,
-    InformacionComponent
+    InformacionComponent,
+    RendererdemoComponent
   ],
   imports: [
     BrowserModule,
