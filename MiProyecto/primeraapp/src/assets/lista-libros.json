@@ -1,17 +1,20 @@
 [
     {
     "id": 1,
-    "titulo": "Te veré bajo el hielo",
-    "autor": "Robert Bryndza"
+    "titulo": "El nombre del viento",
+    "autor": "Patrick Rothfuss",
+    "ruta": "/assets/img/nombre_viento.jpg"
  },
  {
     "id": 2,
     "titulo": "Dime quién soy",
-    "autor": "Julia Navarro"
+    "autor": "Julia Navarro",
+    "ruta": "/assets/img/pilares_tierra.jpg"
  },
  {
     "id": 3,
     "titulo": "El día que se perdió la cordura",
-    "autor": "Javier Castillo"
+    "autor": "Javier Castillo",
+    "ruta": "/assets/img/nombre_viento.jpg"
  }
  ]

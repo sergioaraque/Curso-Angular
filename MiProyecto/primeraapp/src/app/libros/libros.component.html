@@ -1,15 +1,24 @@
 <div *ngIf="verLoader" class="loader"></div>
 
-  <ul>
-      <li *ngFor="let libro of libros">
-          <!-- Se puede pasar un nuevo parámetro a la url con una coma -->
-        <a
-        (click)="agregarLibro(libro)"
-        [routerLink]="['/informacion/', libro.id]">{{libro.titulo}}</a>
-      </li>
-  </ul>
+<div class="container">
+  <div class="row">
+      <div *ngFor="let libro of libros">
 
-  <div *ngIf="errorHttp">
-    <h3>Error: 404 No hemos podido recuperar el listado de libros.</h3>
-    <p>Contacte con soporte para solucionar el problema, info@soporte.es</p>
+        <div class="card" style="width: 18rem; margin:10px;">
+        <img src="{{libro.ruta}}" class="card-img-top" style="max-height: 200px;">
+        <div class="card-body">
+          <h5 class="card-title">{{libro.titulo}}</h5>
+          <p class="card-text">{{libro.autor}}</p>
+          <a href="#" class="btn btn-primary" (click)="agregarLibro(libro)" [routerLink]="['/informacion/', libro.id]">Ver información</a>
+        </div>
+
+      </div>
+
+    </div>
   </div>
+
+</div>
+<div *ngIf="errorHttp">
+  <h3>Error: 404 No hemos podido recuperar el listado de libros.</h3>
+  <p>Contacte con soporte para solucionar el problema, info@soporte.es</p>
+</div>
