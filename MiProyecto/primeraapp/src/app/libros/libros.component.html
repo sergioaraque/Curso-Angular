@@ -1,13 +1,17 @@
-<ul>
-    <li *ngFor="let libro of libros">
-        <!-- Se puede pasar un nuevo parámetro a la url con una coma -->
-      <a
-      (click)="agregarLibro(libro)"
-      [routerLink]="['/informacion/', libro.id]">{{libro.titulo}}</a>
-    </li>
-</ul>
+<div *ngIf="verLoader ; else verDatos" class="loader"></div>
 
-<div *ngIf="errorHttp">
-  <h3>Error: 404 No hemos podido recuperar el listado de libros.</h3>
-  <p>Contacte con soporte para solucionar el problema, info@soporte.es</p>
-</div>
+<ng-template #verDatos>
+  <ul>
+      <li *ngFor="let libro of libros">
+          <!-- Se puede pasar un nuevo parámetro a la url con una coma -->
+        <a
+        (click)="agregarLibro(libro)"
+        [routerLink]="['/informacion/', libro.id]">{{libro.titulo}}</a>
+      </li>
+  </ul>
+
+  <div *ngIf="errorHttp">
+    <h3>Error: 404 No hemos podido recuperar el listado de libros.</h3>
+    <p>Contacte con soporte para solucionar el problema, info@soporte.es</p>
+  </div>
+</ng-template>
