@@ -20,4 +20,9 @@ export class StatefulComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Añadimos el curso al array de productos comprados
+  clickItem(_curso) {
+    this.boughtItems.push(_curso);
+  }
+
 }
