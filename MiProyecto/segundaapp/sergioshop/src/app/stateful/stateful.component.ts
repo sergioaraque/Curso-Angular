@@ -15,7 +15,10 @@ export class StatefulComponent implements OnInit {
   // Listado de elementos que se han comprado
   boughtItems: Array<Product>;
 
-  constructor() { }
+  constructor() {
+    // Iniciamos el array aquí porque en sólo este caso, lo queremos nada más empezar.
+    this.boughtItems = [];
+  }
 
   ngOnInit(): void {
   }
