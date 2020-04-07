@@ -8,16 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class ConfirmComponent implements OnInit {
 
   isDisabled: boolean;
-  public mostramodal: boolean;
+  showModal: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
     this.isDisabled = false;
-    this.mostramodal = false;
   }
 
   mostrarModal() {
-    this.mostramodal = true;
   }
 
 }
