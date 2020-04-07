@@ -10,7 +10,9 @@ import { ConfirmComponent } from '../confirm/confirm.component';
 })
 export class StatefulComponent implements OnInit {
 
+  // Hijo que confirmará el componente
   @ViewChild(ConfirmComponent, {static: false})
+  confirmChild: ConfirmComponent;
 
 
   // Creamos el modelo
@@ -19,8 +21,6 @@ export class StatefulComponent implements OnInit {
   // Listado de elementos que se han comprado
   boughtItems: Array<Product>;
 
-  // Hijo que confirmará el componente
-  confirmChild: ConfirmComponent;
 
   constructor() {
     // Iniciamos el array aquí porque en sólo este caso, lo queremos nada más empezar.
