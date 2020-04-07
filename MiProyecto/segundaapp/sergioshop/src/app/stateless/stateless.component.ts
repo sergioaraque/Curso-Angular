@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../interface/product';
 
 @Component({
@@ -7,6 +7,8 @@ import { Product } from '../interface/product';
   styleUrls: ['./stateless.component.css']
 })
 export class StatelessComponent implements OnInit {
+
+  @Output () cursomatriculado: EventEmitter<Product> = new EventEmitter();// Nos dirá en que curso se ha matriculado
 
   @Input () product: Product; 
   public matricula: string;
@@ -23,6 +25,7 @@ export class StatelessComponent implements OnInit {
   matricularse() {
     this.disabled = true;
     this.matricula = 'Usted está matriculado';
+    this.cursomatriculado.emit(this.product); // Guardamos/enviamos el curso en el que se ha matriculado al componente padre
   }
 
   // Devuelve si está deshabilitado

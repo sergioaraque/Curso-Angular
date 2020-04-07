@@ -28,4 +28,15 @@ export class StatefulComponent implements OnInit {
     this.boughtItems.push(_curso);
   }
 
+  cursoMatriculado(_event: Product) {
+    this.clickItem(_event);
+  }
+
+  // Método para obtener el total del carrito
+  obtenerPrecioCarrito() {
+    if (this.boughtItems) {
+      this.boughtItems.reduce((prev: number, item: Product) => prev + item.price, 0);
+    }
+  }
+
 }
